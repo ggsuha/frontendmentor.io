@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
+:root {
+  --red: 0, 100%, 67%;
+  --yellow: 39, 100%, 56%;
+  --green: 166, 100%, 37%;
+  --blue: 234, 85%, 45%;
+}
+
 // Primary Colors
-$lightRed: hsl(0, 100%, 67%);
-$orangeYellow: hsl(39, 100%, 56%);
-$greenTeal: hsl(166, 100%, 37%);
-$cobaltBlue: hsl(234, 85%, 45%);
+$lightRed: hsl(var(--red));
+$orangeYellow: hsl(var(--yellow));
+$greenTeal: hsl(var(--green));
+$cobaltBlue: hsl(var(--blue));
 
 // Gradient Colors
 $slateBlue: hsl(252, 100%, 67%);
@@ -83,6 +90,84 @@ main {
           .total {
             color: $darkerLavender;
           }
+        }
+      }
+    }
+
+    .summary {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 20px 40px;
+      text-align: left;
+      color: $darkGrayBlue;
+
+      .summary-box {
+        height: 55px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        padding: 15px;
+
+        .title,
+        .value {
+          display: grid;
+          place-items: center;
+        }
+      }
+
+      .summary-box:first-child {
+        margin-top: 15px;
+      }
+
+      .summary-box:last-child {
+        margin-top: 0;
+      }
+
+      .red {
+        background: hsla(var(--red), 0.06);
+
+        .title {
+          color: $lightRed;
+        }
+      }
+
+      .yellow {
+        background: hsla(var(--yellow), 0.06);
+
+        .title {
+          color: $orangeYellow;
+        }
+      }
+
+      .green {
+        background: hsla(var(--green), 0.06);
+
+        .title {
+          color: $greenTeal;
+        }
+      }
+
+      .blue {
+        background: hsla(var(--blue), 0.06);
+
+        .title {
+          color: $cobaltBlue;
+        }
+      }
+
+      .button {
+        text-align: center;
+        color: $white;
+        margin-top: 45px;
+
+        button {
+          all: unset;
+          background-color: $darkGrayBlue;
+          height: 54px;
+          width: 290px;
+          border-radius: 30px;
         }
       }
     }
