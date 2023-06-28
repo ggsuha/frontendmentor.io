@@ -83,8 +83,13 @@ main .card .summary .summary-box {
 }
 main .card .summary .summary-box .title,
 main .card .summary .summary-box .value {
-  display: grid;
+  display: flex;
   place-items: center;
+}
+main .card .summary .summary-box img {
+  margin-right: 10px;
+  height: max-content;
+  width: max-content;
 }
 main .card .summary .summary-box:first-child {
   margin-top: 15px;
@@ -127,6 +132,10 @@ main .card .summary .button button {
   height: 54px;
   width: 290px;
   border-radius: 30px;
+}
+main .card .summary .button button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

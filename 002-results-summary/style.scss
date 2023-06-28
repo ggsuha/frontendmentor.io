@@ -112,8 +112,14 @@ main {
 
         .title,
         .value {
-          display: grid;
+          display: flex;
           place-items: center;
+        }
+
+        img {
+          margin-right: 10px;
+          height: max-content;
+          width: max-content;
         }
       }
 
@@ -168,6 +174,11 @@ main {
           height: 54px;
           width: 290px;
           border-radius: 30px;
+        }
+
+        button:hover {
+          background: linear-gradient($slateBlue, $royalBlue);
+          cursor: pointer;
         }
       }
     }
