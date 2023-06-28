@@ -19,11 +19,44 @@ main .card {
   box-shadow: 15px 15px 30px 3px hsl(221, 100%, 96%);
   border-radius: 32px;
   display: flex;
+  text-align: center;
 }
 main .card .result {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   width: 50%;
   border-radius: 32px;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+main .card .result h2,
+main .card .result .description {
+  color: hsl(241, 100%, 89%);
+}
+main .card .result h1 {
+  color: hsl(0, 0%, 100%);
+}
+main .card .result .circle {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: inline-block;
+}
+main .card .result .circle .info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main .card .result .circle .info .score {
+  font-size: 76px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+main .card .result .circle .info .total {
+  color: hsla(241, 100%, 89%, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
