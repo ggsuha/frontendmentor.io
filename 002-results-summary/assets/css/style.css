@@ -4,6 +4,7 @@
   --yellow: 39, 100%, 56%;
   --green: 166, 100%, 37%;
   --blue: 234, 85%, 45%;
+  --gray-blue: 224, 30%, 27%;
 }
 
 p {
@@ -70,7 +71,7 @@ main .card .summary {
   box-sizing: border-box;
   padding: 20px 40px;
   text-align: left;
-  color: hsl(224, 30%, 27%);
+  color: hsl(var(--gray-blue));
 }
 main .card .summary .summary-box {
   height: 55px;
@@ -85,6 +86,12 @@ main .card .summary .summary-box .title,
 main .card .summary .summary-box .value {
   display: flex;
   place-items: center;
+}
+main .card .summary .summary-box .value {
+  color: hsla(var(--gray-blue), 0.5);
+}
+main .card .summary .summary-box .value .black {
+  color: hsl(var(--gray-blue));
 }
 main .card .summary .summary-box img {
   margin-right: 10px;
@@ -128,7 +135,7 @@ main .card .summary .button {
 }
 main .card .summary .button button {
   all: unset;
-  background-color: hsl(224, 30%, 27%);
+  background-color: hsl(var(--gray-blue));
   height: 54px;
   width: 290px;
   border-radius: 30px;
@@ -136,6 +143,46 @@ main .card .summary .button button {
 main .card .summary .button button:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 14px;
+  }
+  body {
+    margin: 0 0 8px 0;
+  }
+  main {
+    place-items: start;
+  }
+  main .card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  main .card h2 {
+    font-size: 18px;
+  }
+  main .card h1 {
+    font-size: 24px;
+  }
+  main .card .result {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px 60px;
+  }
+  main .card .result .circle {
+    width: 140px;
+    height: 140px;
+  }
+  main .card .result .circle .info .score {
+    font-size: 40px;
+  }
+  main .card .summary {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

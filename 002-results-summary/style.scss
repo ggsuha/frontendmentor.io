@@ -5,6 +5,7 @@
   --yellow: 39, 100%, 56%;
   --green: 166, 100%, 37%;
   --blue: 234, 85%, 45%;
+  --gray-blue: 224, 30%, 27%;
 }
 
 // Primary Colors
@@ -23,7 +24,7 @@ $persianBlue: hsla(241, 72%, 46%, 0);
 $white: hsl(0, 0%, 100%);
 $paleBlue: hsl(221, 100%, 96%);
 $lightLavender: hsl(241, 100%, 89%);
-$darkGrayBlue: hsl(224, 30%, 27%);
+$darkGrayBlue: hsl(var(--gray-blue));
 
 // Custom
 $darkerLavender: hsla(241, 100%, 89%, 0.6);
@@ -116,6 +117,14 @@ main {
           place-items: center;
         }
 
+        .value {
+          color: hsla(var(--gray-blue), 0.5);
+
+          .black {
+            color: $darkGrayBlue;
+          }
+        }
+
         img {
           margin-right: 10px;
           height: max-content;
@@ -180,6 +189,57 @@ main {
           background: linear-gradient($slateBlue, $royalBlue);
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 0 0 8px 0;
+  }
+
+  main {
+    place-items: start;
+
+    .card {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      border-radius: 0;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .result {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px 60px;
+
+        .circle {
+          width: 140px;
+          height: 140px;
+
+          .info {
+            .score {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+
+      .summary {
+        width: 100%;
       }
     }
   }
