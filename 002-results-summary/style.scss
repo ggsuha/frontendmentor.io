@@ -36,12 +36,12 @@ p {
 body {
   background-color: $white;
   font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-items: center;
+  height:100vh;
 }
 
 main {
-  height: 100vh;
-  display: grid;
-  place-items: center;
 
   .card {
     width: 736px;
@@ -204,7 +204,6 @@ main {
   }
 
   main {
-    place-items: start;
 
     .card {
       width: 100%;
