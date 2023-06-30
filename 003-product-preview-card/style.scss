@@ -100,4 +100,38 @@ main {
       }
     }
   }
+
+  @media screen and (max-width: 375px) {
+    .card {
+      width: 344px;
+      height: 612px;
+      flex-direction: column;
+
+      .preview,
+      .info {
+        width: 100%;
+      }
+
+      .preview {
+        height: 240px;
+        border-radius: 10px 10px 0 0;
+        background-image: url(./../images/image-product-mobile.jpg);
+      }
+
+      .info {
+        height: 370px;
+        border-radius: 0 0 10px 10px;
+        padding: 24px;
+
+        .title,
+        .price {
+          margin: 14px 0;
+        }
+
+        button {
+          border-radius: 7px;
+        }
+      }
+    }
+  }
 }

@@ -88,5 +88,33 @@ main .card .info button:hover {
   background-color: var(--darker-cyan);
   cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+  main .card {
+    width: 344px;
+    height: 612px;
+    flex-direction: column;
+  }
+  main .card .preview,
+  main .card .info {
+    width: 100%;
+  }
+  main .card .preview {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(./../images/image-product-mobile.jpg);
+  }
+  main .card .info {
+    height: 370px;
+    border-radius: 0 0 10px 10px;
+    padding: 24px;
+  }
+  main .card .info .title,
+  main .card .info .price {
+    margin: 14px 0;
+  }
+  main .card .info button {
+    border-radius: 7px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
