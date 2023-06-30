@@ -194,6 +194,10 @@ main {
   }
 }
 
+footer {
+  align-self: start;
+}
+
 @media screen and (max-width: 375px) {
   p {
     font-size: 14px;
@@ -241,5 +245,8 @@ main {
         width: 100%;
       }
     }
+  }
+  footer{
+    padding-bottom: 1em;
   }
 }

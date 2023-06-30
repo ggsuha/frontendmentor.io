@@ -143,6 +143,9 @@ main .card .summary .button button:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   cursor: pointer;
 }
+footer {
+  align-self: start;
+}
 
 @media screen and (max-width: 375px) {
   p {
@@ -178,6 +181,9 @@ main .card .summary .button button:hover {
   }
   main .card .summary {
     width: 100%;
+  }
+  footer {
+    padding-bottom: 1em;
   }
 }
 
