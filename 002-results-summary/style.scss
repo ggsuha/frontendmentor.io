@@ -36,12 +36,12 @@ p {
 body {
   background-color: $white;
   font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-items: center;
+  height:100vh;
 }
 
 main {
-  height: 100vh;
-  display: grid;
-  place-items: center;
 
   .card {
     width: 736px;
@@ -194,6 +194,10 @@ main {
   }
 }
 
+footer {
+  align-self: start;
+}
+
 @media screen and (max-width: 375px) {
   p {
     font-size: 14px;
@@ -204,7 +208,6 @@ main {
   }
 
   main {
-    place-items: start;
 
     .card {
       width: 100%;
@@ -242,5 +245,8 @@ main {
         width: 100%;
       }
     }
+  }
+  footer{
+    padding-bottom: 1em;
   }
 }
