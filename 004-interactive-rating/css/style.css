@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 8%);
+}
+body main {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+body main .card {
+  color: hsl(216, 12%, 54%);
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(215, 22%, 15%));
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 414px;
+  max-height: 414px;
+}
+body main .card .star {
+  height: 48px;
+  width: 48px;
+  background-color: hsl(240, 1%, 23%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+body main .card h1 {
+  color: hsl(0, 0%, 100%);
+}
+body main .card p {
+  line-height: 24px;
+  font-weight: 400;
+}
+body main .card #select .rate {
+  display: flex;
+  justify-content: space-between;
+}
+body main .card #select label {
+  background-color: hsl(240, 1%, 23%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+body main .card #select input {
+  display: none;
+}
+body main .card #select input[type=radio]:hover + label {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+body main .card #select input[type=radio]:checked + label {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+body main .card #result {
+  display: none;
+}
+body footer {
+  display: grid;
+}
+
+/*# sourceMappingURL=style.css.map */
