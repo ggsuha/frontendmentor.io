@@ -16,8 +16,8 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   display: grid;
   place-items: center;
-  height:100vh;
-  margin:0;
+  height: 100vh;
+  margin: 0;
 }
 
 main .card {
@@ -147,12 +147,16 @@ footer {
   align-self: start;
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   p {
     font-size: 14px;
   }
   body {
     margin: 0 0 8px 0;
+  }
+  main {
+    place-items: start;
+    height: fit-content;
   }
   main .card {
     width: 100%;

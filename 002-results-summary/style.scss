@@ -38,11 +38,10 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   display: grid;
   place-items: center;
-  height:100vh;
+  height: 100vh;
 }
 
 main {
-
   .card {
     width: 736px;
     height: 510px;
@@ -194,11 +193,7 @@ main {
   }
 }
 
-footer {
-  align-self: start;
-}
-
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   p {
     font-size: 14px;
   }
@@ -208,6 +203,8 @@ footer {
   }
 
   main {
+    place-items: start;
+    height: fit-content;
 
     .card {
       width: 100%;
@@ -246,7 +243,7 @@ footer {
       }
     }
   }
-  footer{
+  footer {
     padding-bottom: 1em;
   }
 }
