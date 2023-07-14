@@ -10,6 +10,11 @@ body main {
   display: grid;
   place-items: center;
 }
+@media only screen and (max-width: 375px) {
+  body main {
+    padding: 5px;
+  }
+}
 body main .card {
   color: hsl(216, 12%, 54%);
   background: linear-gradient(hsl(213, 19%, 18%), hsl(215, 22%, 15%));
@@ -32,10 +37,20 @@ body main .card .star {
 body main .card h1 {
   color: hsl(0, 0%, 100%);
 }
+@media only screen and (max-width: 375px) {
+  body main .card h1 {
+    font-size: x-large;
+  }
+}
 body main .card p {
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 375px) {
+  body main .card p {
+    font-size: 14px;
+  }
 }
 body main .card #select .rate {
   display: flex;
@@ -94,7 +109,7 @@ body main .card #result .submitted {
   color: hsl(25, 97%, 53%);
   display: inline;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 36px;
   margin-top: 32px;
   margin-bottom: 20px;
 }
@@ -106,6 +121,14 @@ body main .card #result h1 {
 }
 body footer {
   display: grid;
+}
+body footer a,
+body footer a:visited {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+}
+body footer a:hover {
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
